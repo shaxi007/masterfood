@@ -11,7 +11,7 @@ export default gql`
 	}
 	type Table {
 		tableId: ID!
-		tableNuber: Int!
+		tableNumber: Int!
 		tableBusy: Boolean!
 		order: Order!
 	}
