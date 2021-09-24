@@ -10,7 +10,7 @@ const TABLES = `
 			ELSE TRUE
 		END AS table_busy
 	FROM tables t
-	INNER JOIN (
+	LEFT JOIN (
 		SELECT
 			*
 		FROM orders
@@ -29,7 +29,7 @@ const ORDER = `
 		json_agg(os) order_sets
 			FROM orders o 
 			NATURAL JOIN tables t
-			LEFT JOIN (
+			INNER JOIN (
 				SELECT
 					os.order_set_id,
 					os.count, 
