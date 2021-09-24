@@ -1,0 +1,21 @@
+{
+  "name": "dars-69",
+  "version": "1.0.0",
+  "description": "",
+  "type":"module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.3.0",
+    "apollo-server-core": "^3.3.0",
+    "dotenv": "^10.0.0",
+    "graphql": "^15.6.0",
+    "pg": "^8.7.1"
+  }
+}
